@@ -4,11 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compras</title>
+    <meta name="description" content="Carta infomativa de los platos disponibles para consumir en nuestro local">
+    <meta name="keywords" content="COMIDA, HAMBURGUESAS, MILANESAS, LOMITOS, PIZZAS, PARRILLA, PARILLADA, ASADO, BEBIDAS, BAR, TRAGOS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/645fd092dc.js" crossorigin="anonymous"></script>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@4/minimal.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./public/styles.css">
+    <title>Menu</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">BROS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <button id="cesta-carrito"><i class="fas fa-shopping-cart"><span id="contador-carrito">0</span></i></button>
+        </nav>
+    </header>
 
-    <script src="compras.js"></script>
+    <main id="producto-contenedor">
+                
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+          <div id="carrito-contenedor">
+    
+          </div>
+          <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+        </div>
+      </div>
+    
+    
+    <footer class="text-center text-white">
+
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <div class="text-center p-3 redes" >
+            Seguinos en nuestras redes
+        </div>
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://www.facebook.com/profile.php?id=100063585101590"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/bros.salta/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-primary btn-floating m-1" 
+                style="background-color: #25d366;" 
+                href="https://api.whatsapp.com/send?phone=5493874868951&text=%C2%A1Hola!%20Pas%C3%A9%20por%20su%20instagram%20y%20quiero%20hacer%20un%20pedido" 
+                role="button">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+          
+    </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="./src/index.js"></script>
+<script src="./src/stock.js"></script>
+<script src="./src/storage.js"></script>
+<script src="./src/obtenerProductos.js"></script>
+<script src="./src/App.js"></script>
+<script src="./src/modalCarrito.js"></script>
+<script src="./src/actualizarCarrito.js"></script>
+<script src="./src/accionesCarrito.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.js" integrity="sha512-ZHzbWDQKpcZxIT9l5KhcnwQTidZFzwK/c7gpUUsFvGjEsxPusdUCyFxjjpc7e/Wj7vLhfMujNx7COwOmzbn+2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
 </body>
+
 </html>

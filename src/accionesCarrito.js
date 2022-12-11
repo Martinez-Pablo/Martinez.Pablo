@@ -1,4 +1,6 @@
+
 let carrito = [];
+
 
 const validarProductoRepetido = (productoId) => {
 
@@ -14,7 +16,7 @@ const validarProductoRepetido = (productoId) => {
         cantidadProducto.innerText = `Cantidad: ${productoRepetido.cantidad}`;
         actualizarTotalesCarrito(carrito);
         Toastify({
-            text: `Se agregó otro ${productoRepetido.nombre}`,
+            text: `Se agregó otra ${productoRepetido.nombre}`,
             duration: 2000
         }).showToast();
     } else {
@@ -37,7 +39,7 @@ const agregarAlCarrito = (productoId) => {
     contenedor.appendChild(div);
     actualizarTotalesCarrito(carrito);
     Toastify({
-        text: `Se agregó el ${producto.nombre} al carrito`,
+        text: `Se agregó una ${producto.nombre} al carrito`,
         duration: 2000
     }).showToast();
 };
@@ -66,3 +68,4 @@ const eliminarProductoCarrito = (productoId) => {
     actualizarTotalesCarrito(carritoActualizado);
     pintarCarrito(carritoActualizado);
 };
+

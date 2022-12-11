@@ -145,6 +145,16 @@
     outline: none;
   }
   
+  .modal-carrito #btn-comprar {
+    background-color: rgba(66, 66, 175, 0.918);
+    border-radius: 12px;
+  }
+
+  .modal-carrito #btn-vaciar-carrito {
+    background-color: rgb(204, 56, 56, 0.918);
+    border-radius: 12px;
+  }
+
   .modal-carrito .producto-precio {
     padding-top: 10px;
   }

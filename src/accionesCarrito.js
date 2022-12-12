@@ -28,7 +28,6 @@ const agregarAlCarrito = (productoId) => {
     const contenedor = document.getElementById("carrito-contenedor");
     const producto = productos.find( producto => producto.id === productoId );
     carrito.push(producto);
-
     const div = document.createElement("div");
     div.classList.add("productoEnCarrito");
     div.innerHTML = `<p>${producto.nombre}</p>
